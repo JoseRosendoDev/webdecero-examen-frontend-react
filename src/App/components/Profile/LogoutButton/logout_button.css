@@ -1,0 +1,16 @@
+
+.logout_button{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    color: aliceblue;
+    background-color: transparent;
+    width: 5rem;
+
+}
+
+.logout_button :hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}

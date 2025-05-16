@@ -1,0 +1,15 @@
+.Group{
+    flex:1;
+    min-width: 100px;
+}
+
+.GroupTitle{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.GroupSubtitle{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
