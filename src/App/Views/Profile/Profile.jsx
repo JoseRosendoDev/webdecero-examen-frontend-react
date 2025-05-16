@@ -35,7 +35,7 @@ export const Profile = () => {
   return (
     <div >
       <div className="off_button">
-          <LogoutButton />/
+          <LogoutButton />
       </div>
       <div className='parent'>
       
@@ -43,7 +43,7 @@ export const Profile = () => {
           <div className="error-message">
             <h1>¡Upss! parece que ocurrio un error</h1>
           </div>
-        ) : user ? (
+        ) : User ? (
           <div className='container'>
             <div className="circle" />
             <section className='profile-header'>
