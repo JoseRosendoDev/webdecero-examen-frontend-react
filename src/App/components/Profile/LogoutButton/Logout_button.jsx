@@ -8,6 +8,7 @@ import './logout_button.css'
  *
  * Botón de cierre de sesión. Elimina el `token` y `refreshToken` del `localStorage` y redirige al usuario a la pantalla principal.
  * Incluye un ícono de apagado.
+ * Incluye un loader
  *
  * @component
  * @returns {JSX.Element} Botón para cerrar sesión y redirigir al inicio.
@@ -20,7 +21,7 @@ import './logout_button.css'
 const LogoutButton = () => {
 const navigate = useNavigate();
 const [isLoading, setLoading] = useState(null);
-const onSubmit = () => {
+const onPressed = () => {
    
     setLoading(true);
    
@@ -37,7 +38,7 @@ const handleLogout = () => {
 }
 
   return (
-    <button className='logout_button' onClick={onSubmit} type="button">
+    <button className='logout_button' onClick={onPressed} type="button">
       {isLoading? <span className="loader"></span> : <FaPowerOff size={25} />} 
     </button>
   )
